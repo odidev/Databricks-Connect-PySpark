@@ -10,7 +10,7 @@ steps:
     versionSpec: '$(python.version)'
 
 - pwsh: |
-   $s = (Get-Content configs/.databricks-connect).replace('<Token>',"$(DatabricksToken)").replace('<ClusterId>',"$(ClusterId)").replace('<OrgId>',"$(DatabricksOrgId)").replace('<location>',"$(Location)")
+   $s = (Get-Content configs/.databricks-connect).replace('<Token>',"bz5mg67isuukure67mlkjyilykpfyjzkpzlhaylanlihcr2vw4ua").replace('<ClusterId>',"odidev").replace('<OrgId>',"Puresoftware").replace('<location>',"noida")
    
    $s | Set-Content configs/.databricks-connect
    
